@@ -1,0 +1,6 @@
+[
+    {"authorId" : 1 , "authorname" : "R K Narayanan","genre" : "Psychological Fiction" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:RK_Narayan.jpg"},
+    {"authorId" : 2 , "authorname" : "Abdul Kalam" ,"genre" : "Biography" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:A._P._J._Abdul_Kalam.jpg"},
+    {"authorId" : 3 , "authorname" : "Joseph Babera" ,"genre" : "Cartoon" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:JBarbera.jpg"}
+   
+   ]

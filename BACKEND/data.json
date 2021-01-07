@@ -1,0 +1,6 @@
+[
+    {"bookId" : 1 , "book" : "The Guide" ,"author" : "R K Narayanan" ,"genre" : "Psychological Fiction" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:TheGuide.jpg"},
+    {"bookId" : 2 , "book" : "Wings Of Fire" ,"author" : "Abdul Kalam" ,"genre" : "Biography" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg"},
+    {"bookId" : 3 , "book" : "Tom And Jerry" ,"author" : "Joseph Barbera" ,"genre" : "Cartoon" ,"imageUrl" : "https://en.wikipedia.org/wiki/File:TomandJerryTitleCardc.jpg"}
+   
+   ]

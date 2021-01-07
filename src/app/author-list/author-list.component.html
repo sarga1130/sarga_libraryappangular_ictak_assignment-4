@@ -1,0 +1,57 @@
+<div class="card">
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                        <button class="btn btn-primary" (click)='toggleImage()'>    
+                            {{showImage? 'Hide':'Show'}} Image
+                        </button>
+                    </th>
+                    <th scope="col">Author Id</th>
+                    <th scope="col">Author Name</th>
+                    <th scope="col">Genre</th>
+                    <!-- <th scope="col">Price</th>
+                    <th scope="col">5 Star Rating</th> -->
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor='let author of authors'>
+                      <td>
+                          <img *ngIf='showImage' 
+                          [src] = 'author.imageUrl'
+                          [title]  = 'author.authorname'
+                          [style.width.px]  = 'imageWidth'
+                          [style.margin.px]  = 'imageMargin'>
+                      </td>
+                      <td>{{ author.authorID }}</td>
+                      <td>{{ author.authorname }}</td>
+                      <td>{{ author.genre }}</td>
+                      <!-- <td>{{ product.price }}</td>
+                      <td>{{ product.starRating }}</td> -->
+                      <td>
+                        <!-- <a class="action-btn" > 
+                          <i class="material-icons" (onclick)="onedit(product)">edit</i> 
+                        </a>
+                        
+                        <a class="action-btn">
+                          <i class="material-icons">delete</i> 
+                        </a> -->
+                        <button class="btn btn-danger" *ngIf=_auth.loggedIn() (click)= "ondlt(author)" style="margin-right: 16px">Delete</button>
+                        <button class="btn btn-primary" *ngIf=_auth.loggedIn() (click)="onedit(author)">Update</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  

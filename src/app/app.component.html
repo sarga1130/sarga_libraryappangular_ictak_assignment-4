@@ -1,0 +1,11 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav navbar-right">
+        <a class="nav-link" routerLink="/login" *ngIf="!_auth.loggedIn()" routerLinkActive="active">Login</a>
+        <a routerLink="/add" class="nav-link" style="cursor:pointer" *ngIf="_auth.loggedIn()">Add Book</a>
+        <a class="nav-link" style="cursor: pointer;" *ngIf="_auth.loggedIn()" (click)="logoutUser()">Logout</a>
+    
+    </ul>
+    </div>

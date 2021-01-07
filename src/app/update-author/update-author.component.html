@@ -1,0 +1,59 @@
+<div class="card">
+    <form (ngSubmit)="updateAuthor()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+  
+                <table class="table">
+                    
+                    <tbody>
+                      
+                      <tr>
+                        <td><label>Author Id</label></td>
+                        <td><input type="text" name="a_id" [(ngModel)]="authorItem.authorID"></td>
+                      </tr>
+                    
+                      <tr>
+                        <td><label>Author Name</label></td>
+                        <td><input type="text" name="a_code" [(ngModel)]="authorItem.authorname"></td>
+                      </tr>
+                      <tr>
+                        <td><label>Genre</label></td>
+                        <td><input type="text" name="a_date" [(ngModel)]="authorItem.genre"></td>
+                      </tr>
+                      <!-- <tr>
+                        <td><label>Description</label></td>
+                        <td><input type="text" name="p_desc" [(ngModel)]="productItem.description"></td>
+                      </tr>
+                      <tr>
+                        <td><label>Price</label></td>
+                        <td><input type="number" name="p_price" [(ngModel)]="productItem.price"></td>
+                      </tr>
+                      <tr>
+                        <td><label>Star Rating</label></td>
+                        <td><input type="text" name="p_rating" [(ngModel)]="productItem.starRating"></td>
+                      </tr> -->
+                      <tr>
+                        <td><label>Image Url</label></td>
+                        <td><input type="text" name="a_image" [(ngModel)]="authorItem.imageUrl"></td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td>
+                            <!-- <input type="submit" value="Update"/> -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button type="submit" class="btn btn-primary" style="width: 100%; ">Update</button>  
+  
+            </div>
+        </div>
+    </form>
+  </div>
+  
+  
+  
+  

@@ -1,0 +1,37 @@
+
+<div class="card-header">
+    <h3>{{title}}</h3>
+</div>
+
+<div class="card-body">
+    <form class="form col-md-6" #usersignup="ngForm" (ngSubmit)="userVerify()">
+        <div class="form=group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" [(ngModel)]="User.name" name="name" #name="ngModel" [class.is-invalid]="name.invalid && name.touched"  pattern="^[a-zA-Z.]+" required />
+            <small class="text-danger" [class.d-none]="name.valid || name.touched">Enter Name</small>
+        </div>
+        <br>
+        <div class="form=group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" [(ngModel)]="User.country" name="country" #country="ngModel" [class.is-invalid]="country.invalid && country.touched"  pattern="^[a-zA-Z.]+" required />
+            <small class="text-danger" [class.d-none]="country.valid || country.touched">Enter Country Email</small>
+        </div>
+        <br>
+        <div class="form=group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" [(ngModel)]="User.username" name="uname" #email="ngModel" [class.is-invalid]="email.invalid && email.touched"  pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}" required />
+            <small class="text-danger" [class.d-none]="email.valid || email.touched">Enter valid Email</small>
+        </div>
+        <br>
+
+        <div class="form=group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="User.password" minlength="6" required />
+        </div>
+        <br>
+
+        <button class="btn btn-primary" [disabled]="usersignup.form.invalid">
+            Login
+        </button>
+    </form>
+</div>
